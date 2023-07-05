@@ -1,0 +1,328 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bilo, sans-serif;
+    font-style: normal;
+}
+
+
+
+
+header {
+    background-color: #EB5595;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    background: url(/img/logo_min.png) no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 60px;
+    margin-top: 7px;
+    position: absolute;
+    left: 46%;
+}
+
+
+#hamburguesa a {
+    font-family: bilo, sans-serif;
+    color: #ffffff;
+}
+
+#nosotros {
+    color: #593080;
+}
+
+#nosotrosspan {
+    color: #EB5595;
+    font-weight: 700;
+}
+
+#galerias img {
+    mix-blend-mode: luminosity;
+    scale: 100%;
+    transition: mix-blend-mode 0.5s ease;
+    transition: scale 0.5s ease;
+}
+
+#uno, #cuatro, #cinco {
+    background-color: #4f5197a8;
+}
+
+#dos, #tres, #seis {
+    background-color: #eb559685;
+}
+
+#servicios {
+    background-color: #EB5595;
+    letter-spacing: 3px;
+    padding-bottom: 10vw;
+    border-radius: 0 0 50vw 50vw;
+}
+
+.accordion-item {
+    background-color: #4F5297;
+    box-shadow: #55243f 0px 20px 15px 5px;
+    min-height: 63vw;
+}
+
+.accordion-header {
+    padding-top: 45%;
+    font-size: 6vw;
+}
+
+.accordion-body {
+    padding-bottom: 100px;
+    font-size: 90%;
+}
+
+#lineas {
+    border-top: 6px #4F5297 solid;
+    border-bottom: 3px #4F5297 solid;
+    width: 30vw;
+    height: 11px;
+}
+
+#fondo {
+    background-color: #4F5297;
+    width: 100vw;
+    height: 100%;
+}
+
+#videoc {
+    background-color: #4F5297;
+    padding-top: 20vw;
+    padding-bottom: 5vw;
+    box-shadow: #2b2c3d60 0px 15px 10px 1px;
+}
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+#contacto section > h2 {
+    color: #4F5297;
+}
+
+form {
+    width: 80vw;
+}
+
+#botonenviar {
+    width: 30vw;
+    background-color: #EB5595;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+#botonenviar:hover {
+    background-color: #4F5297;
+}
+
+input, #comentario, #botonenviar {
+    border: 2px #EB5595 solid;
+}
+
+#comentario {
+    height: 40vw;
+}
+
+:focus {
+    outline: 1px #4F5297 solid;
+}
+
+footer {
+    background-color: #EB5595;
+    height: auto;
+    font-size: 5vw;
+}
+
+
+#redes {
+    width: 15vw;
+    height: auto;
+    scale: 100%;
+    transition: scale 0.5s ease;
+}
+
+#redes:hover {
+    scale: 130%;
+    transition: scale 0.5s ease;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+    header {
+        position:static;
+    }
+
+    #logo {
+        background: url(/img/logo.png) no-repeat;
+        background-size: contain;
+        margin-top: 15px;
+    }
+
+    #hamburguesa {
+        margin-top: 40px;
+    }
+    #hamburguesa a{
+        font-family: bilo, sans-serif;
+        color: #ffffff;
+        transition: color 0.5s ease;
+    }
+    
+    #hamburguesa a:hover {
+        font-family: bilo, sans-serif;
+        color: #593080;
+        transition: color 0.5s ease;
+    }
+
+    #galerias img {
+        mix-blend-mode: luminosity;
+        scale: 100%;
+        transition: mix-blend-mode 0.5s ease;
+        transition: scale 0.5s ease;
+    }
+    
+    #galerias img:hover {
+        mix-blend-mode: normal;
+        scale: 120%;
+        transition: mix-blend-mode 0.5s ease;
+        transition: scale 0.5s ease;
+    }
+    #uno, #tres, #cinco {
+        background-color: #4f5197a8;
+    }
+
+    #dos, #cuatro, #seis {
+        background-color: #eb559685;
+    }
+
+    #tarjetas {
+        margin-bottom: 150px;
+    }
+
+    .accordion-item {
+        background-color: #4F5297;
+        box-shadow: #55243f 0px 20px 15px 5px;
+        min-height: 40vw;
+    }
+    
+    .accordion-header {
+        padding-top: 45%;
+        font-size: 4vw;
+    }
+    
+    .accordion-body {
+        padding-bottom: 100px;
+        font-size: 90%;
+    }
+
+    #contacto {
+        background: url(/img/montaña_formulario.png)no-repeat;
+        background-size: 50vw;
+        background-position-y: bottom;
+    }
+
+    footer {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    header {
+        position:static;
+    }
+
+    #logo {
+        background: url(/img/logo.png) no-repeat;
+        background-size: contain;
+        position: static;
+        width: 20vw;
+    }
+
+    #hamburguesa a {
+        background-color: #4F5297;
+        border-radius: 15%;
+        margin: 0 3px;
+        color: aliceblue;
+        transition: background-color 0.5s ease;
+        transition: color 0.5s ease;
+    }
+
+    #hamburguesa a:hover {
+        background-color: #ffffff;
+        color: #4F5297;
+        transition: background-color 0.5s ease;
+        transition: color 0.5s ease;
+    }
+
+    #uno, #tres, #cinco, #ocho, #diez, #doce{
+        background-color: #4f5197a8;
+    }
+    
+    #dos, #cuatro, #seis, #siete, #nueve, #once {
+        background-color: #eb559685;
+    }
+
+    .accordion-item {
+        background-color: #4F5297;
+        box-shadow: #55243f 0px 20px 15px 5px;
+        min-height: 23vw;
+    }
+    
+    .accordion-header {
+        padding-top: 45%;
+        font-size: 2vw;
+    }
+    
+    .accordion-body {
+        padding-bottom: 100px;
+        font-family: bilo, sans-serif;
+        font-weight: lighter;
+        font-size: 80%;
+    }
+
+    #servicios {
+        border-radius: 0 0 20vw 20vw;
+        padding-bottom: 150px;
+    }
+
+    #videoc {
+        padding-top: 10vw;
+    }
+
+    video {
+        border-radius: 110px;
+    }
+
+    #contacto {
+        background: url(/img/montaña_formulario.png)no-repeat;
+        background-size: 50vw 50vw;
+        background-position-y: bottom;
+    }
+
+    #comentario {
+        height: 230px;
+    }
+
+    #botonenviar {
+        width: 52vw;
+    }
+
+    footer {
+        font-size: 2vw;
+    }
+
+    footer div:last-child {
+        border-left: #4F5297 5px solid;
+    }
+
+}

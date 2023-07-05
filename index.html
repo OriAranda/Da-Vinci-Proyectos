@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriana Aranda DGT4BV</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+</head>
+
+
+<body>
+
+
+
+    <!-- BARRA DE NAVEGACIÓN -->
+
+    <header class="container-fluid z-3 d-lg-flex justify-content-between">
+        <div class="col-lg-2 pt-lg-1 pb-lg-1 ps-lg-3">
+            <h1 id="logo" class="col-6"></h1>
+        </div>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid" data-bs-theme="dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburguesa"
+                    aria-controls="hamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-md-center" id="hamburguesa">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger fw-ligh pt-3 ps-3 pt-lg-0 ps-lg-2 pt-lg-1" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger fw-ligh pt-3 ps-3 pt-lg-0 ps-lg-2 pt-lg-1" href="#nosotros">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger fw-ligh pt-3 ps-3 pt-lg-0 ps-lg-2 pt-lg-1" href="#galerias">GALERÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger fw-ligh pt-3 ps-3 pt-lg-0 ps-lg-2 pt-lg-1" href="#servicios">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger fw-ligh pt-3 ps-3 pt-lg-0 ps-lg-2 pt-lg-1" href="#contacto">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger fw-ligh pt-3 ps-3 pt-lg-0 ps-lg-2 pt-lg-1" href="#redes">REDES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER SLIDE -->
+
+    <div class="container-fluid">
+        <div id="bannerinicio" class="row carousel slide carousel-fade" data-bs-ride="true">
+            <div class="col carousel-inner px-0">
+                <picture class="carousel-item active" data-bs-interval="5000">
+                    <source media="(max-width: 767px)" srcset="img/betono_slider_1.jpg">
+                    <source media="(max-width: 991px)" srcset="img/betono_slider_md_1.jpg">
+                    <img src="img/betono_slider_lg_1.jpg" class="d-block img-fluid" alt="0">
+                </picture>
+                <picture class="carousel-item" data-bs-interval="5000">
+                    <source media="(max-width: 767px)" srcset="img/betono_slider_2.jpg">
+                    <source media="(max-width: 991px)" srcset="img/betono_slider_md_2.jpg">
+                    <img src="img/betono_slider_lg_2.jpg" class="d-block img-fluid" alt="0">
+                </picture>
+                <picture class="carousel-item" data-bs-interval="5000">
+                    <source media="(max-width: 767px)" srcset="img/betono_slider_3.jpg">
+                    <source media="(max-width: 991px)" srcset="img/betono_slider_md_3.jpg">
+                    <img src="img/betono_slider_lg_3.jpg" class="d-block img-fluid" alt="0">
+                </picture>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerinicio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerinicio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- SOBRE NOSOTROS -->
+    <div class="container">
+        <section id="nosotros" class="row justify-content-center p-5">
+            <h2 class="col-10 d-flex flex-row justify-content-center pb-3 fs-1"> Sobre<span id="nosotrosspan"
+                    class="ps-2">NOSOTROS</span></h2>
+            <p class="col-10 text-center text-md-start pb-2 fw-normal fs-5">En nuestra agencia, nos enorgullece
+                presentar soluciones
+                visuales
+                innovadoras y personalizadas para todas tus necesidades de diseño. Nos especializamos en cuatro áreas
+                clave: <span class="fst-italic fw-bold">ilustración, branding, packaging y diseño web.</span></p>
+            <p class="col-10 text-center text-md-start fw-normal fs-5">Sabemos que cada proyecto es único y merece una
+                atención
+                especial. Es por eso
+                que nuestro talentoso equipo de diseñadores gráficos está aquí para ayudarte a transmitir tu mensaje de
+                manera efectiva, a través de imágenes impactantes y estéticamente atractivas.</p>
+        </section>
+    </div>
+
+    <!-- GALERÍA -->
+
+    <section id="galerias" class="container-fluid">
+        <div class="row">
+            <a id="uno" class="col-6 col-md-4 col-lg-2 p-0" href="img/astrologia.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/astrologia_min.jpg" alt="">
+            </a>
+            <a id="dos" class="col-6 col-md-4 col-lg-2 p-0" href="img/animales.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/animales_min.jpg" alt="">
+            </a>
+            <a id="tres" class="col-6 col-md-4 col-lg-2 p-0" href="img/dinamica.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/dinamica_min.jpg" alt="">
+            </a>
+            <a id="cuatro" class="col-6 col-md-4 col-lg-2 p-0" href="img/vino.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/vino_min.jpg" alt="">
+            </a>
+            <a id="cinco" class="col-6 col-md-4 col-lg-2 p-0" href="img/soul.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/soul_min.jpg" alt="">
+            </a>
+            <a id="seis" class="col-6 col-md-4 col-lg-2 p-0" href="img/clasico.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/clasico_min.jpg" alt="">
+            </a>
+            <a id="siete" class="d-none d-lg-block col-lg-2 p-0" href="img/janisjoplin.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/janisjoplin_min.jpg" alt="">
+            </a>
+            <a id="ocho" class="d-none d-lg-block col-lg-2 p-0" href="img/cuento.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/cuento_min.jpg" alt="">
+            </a>
+            <a id="nueve" class="d-none d-lg-block col-lg-2 p-0" href="img/moderno.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/moderno_min.jpg" alt="">
+            </a>
+            <a id="diez" class="d-none d-lg-block col-lg-2 p-0" href="img/revista.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/revista_min.jpg" alt="">
+            </a>
+            <a id="once" class="d-none d-lg-block col-lg-2 p-0" href="img/libre.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/libre_min.jpg" alt="">
+            </a>
+            <a id="doce" class="d-none d-lg-block col-lg-2 p-0" href="img/david.jpg" data-fancybox="galeria">
+                <img class="img-fluid" src="img/david_min.jpg" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+
+    <section id="servicios" class="container-fluid position-relative text-light">
+        <div class="row pt-4">
+            <div id="lineas" class="col align-self-center"></div>
+            <h2 class="col text-center pt-2 fw-normal">SERVICIOS</h2>
+            <div id="lineas" class="col align-self-center"></div>
+        </div>
+        <div id="tarjetas" class="row flex-column flex-md-row justify-content-evenly">
+            <div class="pt-3 col-8 col-md-5 col-lg-3 align-self-center align-self-lg-start">
+                <div class="accordion accordion-flush" id="tarjeta">
+                    <div class="accordion-item my-3 mx-auto text-light rounded-pill" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ilustracion" aria-expanded="false"
+                        aria-controls="ilustracion">
+                        <h2 class="accordion-header">
+                            <div class="accordion collapsed text-center">
+                                ILUSTRACIÓN
+                            </div>
+                        </h2>
+                        <div id="ilustracion" class="accordion-collapse collapse" data-bs-parent="#tarjeta">
+                            <div class="accordion-body text-center mb-3 pt-4">La ilustración es nuestro medio de
+                                expresión
+                                favorito. Transformamos ideas en ilustraciones
+                                cautivadoras, ya sea para libros, revistas, publicidad o proyectos artísticos. Nuestro
+                                enfoque
+                                artístico y versátil garantiza que cada ilustración sea única y se adapte perfectamente
+                                a
+                                tus
+                                necesidades.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-2 col-8 col-md-5 col-lg-3 align-self-center align-self-lg-start">
+                <div class="accordion accordion-flush" id="tarjeta">
+                    <div class="accordion-item my-3 mx-auto text-light rounded-pill" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#branding" aria-expanded="false"
+                        aria-controls="branding">
+                        <h2 class="accordion-header">
+                            <div class="accordion collapsed text-center">
+                                BRANDING
+                            </div>
+                        </h2>
+                        <div id="branding" class="accordion-collapse collapse" data-bs-parent="#tarjeta">
+                            <div class="accordion-body text-center mb-3 pt-4">El branding es esencial para construir una
+                                identidad sólida para tu empresa. Trabajaremos
+                                para crear un logotipo distintivo y memorable que refleje la esencia de tu marca.
+                                Desarrollaremos una guía de estilo coherente que unifique tus comunicaciones visuales,
+                                desde
+                                tarjetas de visita hasta papelería corporativa y material promocional.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-2 col-8 col-md-5 col-lg-3 align-self-center align-self-lg-start">
+                <div class="accordion accordion-flush" id="tarjeta">
+                    <div class="accordion-item my-3 mx-auto text-light rounded-pill" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#packaging" aria-expanded="false"
+                        aria-controls="packaging">
+                        <h2 class="accordion-header">
+                            <div class="accordion collapsed text-center">
+                                PACKAGING
+                            </div>
+                        </h2>
+                        <div id="packaging" class="accordion-collapse collapse" data-bs-parent="#tarjeta">
+                            <div class="accordion-body text-center mb-3 pt-4">El packaging
+                                es una herramienta poderosa para captar la atención del consumidor y transmitir
+                                el valor de tu producto. Nuestro equipo experto en diseño de packaging se asegurará de
+                                que
+                                tus
+                                productos se destaquen en los estantes, con un diseño que combine atractivo visual y
+                                funcionalidad.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-2 col-8 col-md-5 col-lg-3 align-self-center align-self-lg-start">
+                <div class="accordion accordion-flush" id="tarjeta">
+                    <div class="accordion-item my-3 mx-auto text-light rounded-pill" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#diseñoweb" aria-expanded="false"
+                        aria-controls="diseñoweb">
+                        <h2 class="accordion-header">
+                            <div class="accordion collapsed text-center">
+                                DISEÑO WEB
+                            </div>
+                        </h2>
+                        <div id="diseñoweb" class="accordion-collapse collapse" data-bs-parent="#tarjeta">
+                            <div class="accordion-body text-center mb-3 pt-4">En el mundo
+                                digital actual, tener una presencia en línea sólida es fundamental. Nuestros
+                                diseñadores web crearán un sitio web moderno, intuitivo y atractivo que refleje la
+                                identidad
+                                de
+                                tu marca y ofrezca una experiencia de usuario excepcional.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fondo" class="row position-absolute z-n1 top-0 w-100"></div>
+    </section>
+
+    <!-- VIDEO -->
+    <div class="container-fluid">
+        <section id="videoc" class="row position-relative">
+            <video class="col object-fit-fill px-0 px-lg-5" controls poster="video/poster.jpg">
+                <source src="video/BeTono.mp4" type="video/mp4">
+            </video>
+        </section>
+    </div>
+
+    <!-- CONTACTO -->
+    <div id="contacto" class="container-fluid">
+        <section  class="row d-flex flex-column">
+            <h2 class="col col-md-9 col-lg-7 mx-auto pt-5 fs-1 text-center text-md-start mx-lg-0 ms-lg-auto"><span id="nosotrosspan">CONECTATE</span> con nosotros</h2>
+            <form class="col-9 col-lg-11 d-flex flex-column mx-auto pt-3 mb-md-4"
+                action="https://formsubmit.co/oriana.aranda@davinci.edu.ar" method="POST">
+
+                <label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="rounded-pill ps-2 mb-2 col-lg-7 ms-lg-auto">
+
+                <label for="apellido"></label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="rounded-pill ps-2 mb-2 col-lg-7 ms-lg-auto">
+
+                <label for="email"></label>
+                <input type="email" name="email" id="email"  placeholder="E-Mail" class="rounded-pill ps-2 mb-2 col-lg-7 ms-lg-auto">
+
+                <label for="comentario"></label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Comentario"
+                    class="col col-md-7 rounded-4 ps-2 mb-2 ms-md-auto col-lg-7"></textarea>
+
+                <input id="botonenviar" class="btn my-4 mx-auto me-md-5 mx-lg-0 ms-lg-auto my-lg-3 text-light fw-semibold" type="submit" value="ENVIAR">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </section>
+    </div>
+
+    <!-- REDES -->
+
+
+    <footer class="container-fluid d-lg-flex justify-content-center ">
+        <div class="row col-lg-6 text-center pt-4 d-flex justify-content-evenly justify-content-md-center">
+            <a class="col col-md-3 col-lg-3" href="https://www.behance.net" target="_blank">
+                <img id="redes" class="img-fluid" src="img/behance.png" alt="">
+            </a>
+            <a class="col col-md-3 col-lg-3" href="https://www.facebook.com/home.php" target="_blank">
+                <img id="redes" class="img-fluid" src="img/facebook.png" alt="">
+            </a>
+            <a class="col col-md-3 col-lg-3" href="https://www.instagram.com" target="_blank">
+                <img id="redes" class="img-fluid" src="img/intagram.png" alt="">
+            </a>
+        </div>
+        <div class="row col-lg-6 d-flex flex-column flex-lg-column flex-md-row justify-content-md-center text-light fw-light text-center pt-4">
+            <p class="col col-md-5 col-lg-12 text-md-end text-lg-start me-md-3 ps-lg-5">Oriana Aranda</p>
+            <p class="col col-md-5 col-lg-12 text-md-start ms-md-3 ms-lg-0 ps-lg-5">Diseño Web</p>
+            <p class="col col-md-5 col-lg-12 text-md-end text-lg-start me-md-3 ps-lg-5">DGT4BV</p>
+            <p class="col col-md-5 col-lg-12 text-md-start text-lg-start ms-md-3 ms-lg-0 ps-lg-5">2023</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <script type="text/javascript">
+        $('.js-scroll-trigger').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+
+    <script>
+        const choiceArray = document.querySelectorAll(".choice")
+
+        choiceArray.forEach((card) => {
+            card.addEventListener("click", () => {
+                choiceArray.forEach((element) => {
+                    element.classList.remove("expand", "unset")
+                    element.classList.add('small')
+                })
+                card.classList.remove("small")
+                card.classList.add('expand')
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
